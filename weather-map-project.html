@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Map</title>
+    <script src="js/keys.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/weather-map-project.css">
+</head>
+<body>
+<div class="page-wrapper">
+<!--holds the view-->
+    <div class="container app-container grow">
+<!--        <img class="ipad-frame-background" src="images/transparent-ipad.png" alt="ipad frame">-->
+        <div class="row row-wrapper grow">
+            <img class="image" src="images/clouds-sky.gif" alt="clouds image">
+            <div class="container hero-container grow">
+                <div class="row hero-row grow">
+<!-- sidebar starts, holds todays forecast-->
+                    <div class="column sidebar shrink">
+                        <div class="row " id="time">
+                            <div class="column align-center">
+                                <h4 class="fontSizeXLarge white-text">7:29 <span
+                                        class="fontSizeMed white-text">PM</span></h4>
+                            </div>
+                        </div>
+                        <div class="row " id="date">
+                            <div class="column align-center">
+                                <h4 class="fontSizeMed white-text">Friday, 24 Mar</h4>
+                            </div>
+                        </div>
+                        <div class="row grow today-weather-row">
+                            <div class="column today-weather-card align-center" id="weather-card-background">
+                            </div>
+                        </div>
+                    </div>
+<!--map column, users interaction with the map-->
+                    <div class="column map">
+                        <div id='map' style='width: 100%; height: 700px;'></div>
+                        <div class="row shrink">
+                            <form class="column justify-center text-center align-center gap-10" id="search-column">
+                                <label for="setMarker"></label>
+                                <input class="fontSizeMed" type="text" name="setMarker" id="setMarker"
+                                       placeholder="City, State">
+                                <img id="searchMarkerButton" src="images/search-icon3.png"
+                                     alt="magnifying glass search button">
+                            </form>
+                        </div>
+                    </div>
+<!--four day forecast starts-->
+                    <div class="row four-day-title justify-center text-center">
+                        <h2>FOUR DAY FORECAST</h2>
+                    </div>
+                    <div class="row four-day-row shrink justify-center text-center" id="forecastDiv">
+                        <div class="column weather-card"></div>
+                        <div class="column weather-card"></div>
+                        <div class="column weather-card"></div>
+                        <div class="column weather-card"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src="js/mapbox-weather-map-project.js"></script>
+<script src="js/weather-map-project.js"></script>
+</body>
+</html>

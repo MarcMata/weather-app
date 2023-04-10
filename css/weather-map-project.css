@@ -1,0 +1,218 @@
+/*layout*/
+
+.image {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    height: 100%;
+    width: 97%;
+    opacity: .7;
+    border-radius: 10px;
+}
+
+.hero-row {
+    height: 60vh;
+    width: 100%;
+    row-gap: 0;
+    /*background: red;*/
+}
+
+.row-wrapper {
+    /*background-color: saddlebrown;*/
+    border-radius: 20px;
+    position: relative;
+}
+
+.container {
+    row-gap: 0;
+}
+
+.app-container {
+    padding: 40px 20px;
+    position: relative;
+}
+
+/*todays weather Column*/
+.hero-row {
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.today-weather-row {
+    position: relative;
+    display: flex;
+}
+
+.today-weather-card {
+    max-height: 95%;
+    border-radius: 10px;
+    gap: 0;
+}
+
+.weather-card{
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 3px;
+    opacity: .85;
+}
+
+.weather-card-text {
+    color: #000000;
+    display: flex;
+}
+
+#date {
+    padding-right: 10px;
+}
+.today-icon {
+    height: 75px;
+    width: 75px;
+}
+
+.sidebar {
+    border-right: 3px solid black;
+}
+
+/*todays weather ends*/
+
+/*four day weather forecast*/
+
+h2 {
+    color: #ffffff;
+}
+#weather-card-background  {
+    background-color: lightblue;
+    opacity: .85;
+    border: 1px solid black;
+}
+.icon {
+    height: 50px;
+    width: 50px;
+}
+.four-day-row {
+    height: 20vh;
+    width: 100%;
+    margin-bottom: 10px;
+    /*background-color: green;*/
+}
+.four-day-title {
+    border-top: 3px solid black;
+}
+
+/*map starts*/
+
+#search-column {
+    position: relative;
+}
+
+#setMarker {
+    border: none transparent;
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: unset;
+}
+
+#searchMarkerButton {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 14px;
+    bottom: 10px;
+    left: 427px;
+    transition: all ease 3s;
+}
+
+#searchMarkerButton:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.map {
+    height: 70%;
+    width: 50%;
+    /*background: lightblue;*/
+}
+#map {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 50%;
+
+}
+/*map column ends*/
+
+/*misc*/
+
+body {
+    background-color: whitesmoke;
+    background-image: linear-gradient(to bottom, #0094fc, #ffffff);
+    background-size: 50% 100%;
+    animation: sunny-sky 10s ease-in-out infinite;
+}
+/*.page-wrapper{*/
+/*    position: relative;*/
+/*}*/
+
+/*currently working on*/
+/*.ipad-frame-background{*/
+/*    position: absolute;*/
+/*    object-fit: cover;*/
+/*    width: 2100px;*/
+/*    height: 150%;*/
+/*}*/
+
+input#setMarker {
+    background-color: lightblue;
+    opacity: .8;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+::placeholder {
+    color: #545454;
+}
+
+
+@keyframes sunny-sky {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+/*misc ends*/
+
+/*tools used*/
+.gap-10 {
+    gap:10px;
+}
+
+.dflex {
+    display: flex;
+}
+
+.white-text {
+    color: #ffffff;
+}
+.fontSizeSmall {
+    font-size: 15px;
+}
+.fontSizeSmallMed{
+    font-size: 20px;
+}
+.fontSizeMed {
+    font-size: 25px;
+}
+.fontSizeLarge {
+    font-size: 40px;
+}
+.fontSizeXLarge {
+    font-size: 50px;
+}
+/*tools used*/
+
