@@ -4,8 +4,10 @@
     position: absolute;
     z-index: -1;
     object-fit: cover;
-    height: 100%;
-    width: 97%;
+    height: 118%;
+    width: 95%;
+    top: -5px;
+    left: 44px;
     opacity: .7;
     border-radius: 10px;
 }
@@ -23,8 +25,21 @@
     position: relative;
 }
 
+/*currently working on*/
+.ipad-frame-background{
+    position: absolute;
+    top: -49px;
+    left: -163px;
+    z-index: -4;
+    height: 135%;
+    max-width: unset;
+    width: 134%;
+}
+
 .container {
     row-gap: 0;
+    max-height: 82vh;
+    width: 100%;
 }
 
 .app-container {
@@ -46,17 +61,18 @@
 }
 
 .today-weather-card {
-    max-height: 95%;
+    max-height: 100%;
     border-radius: 10px;
-    gap: 0;
+    margin-bottom: 10px;
 }
 
 .weather-card{
     background-color: lightblue;
     border: 1px solid black;
     border-radius: 10px;
-    margin: 3px;
     opacity: .85;
+    max-height: 100%;
+    margin-bottom: 5px;
 }
 
 .weather-card-text {
@@ -95,8 +111,6 @@ h2 {
 .four-day-row {
     height: 20vh;
     width: 100%;
-    margin-bottom: 10px;
-    /*background-color: green;*/
 }
 .four-day-title {
     border-top: 3px solid black;
@@ -131,8 +145,8 @@ h2 {
 }
 
 .map {
-    height: 70%;
-    width: 50%;
+    height: 55vh;
+    width: 40vw;
     /*background: lightblue;*/
 }
 #map {
@@ -151,17 +165,10 @@ body {
     background-size: 50% 100%;
     animation: sunny-sky 10s ease-in-out infinite;
 }
-/*.page-wrapper{*/
-/*    position: relative;*/
-/*}*/
-
-/*currently working on*/
-/*.ipad-frame-background{*/
-/*    position: absolute;*/
-/*    object-fit: cover;*/
-/*    width: 2100px;*/
-/*    height: 150%;*/
-/*}*/
+.page-wrapper{
+    position: relative;
+    padding-top: 5vh;
+}
 
 input#setMarker {
     background-color: lightblue;
@@ -216,3 +223,4 @@ input#setMarker {
 }
 /*tools used*/
 
+/*Media queries */
